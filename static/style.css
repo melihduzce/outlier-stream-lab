@@ -1,0 +1,44 @@
+/* style.css - Custom styling for AIOps Dashboard */
+
+@keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b0f19;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f2937;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #374151;
+}
+
+/* Mode Button Active Styles */
+.active-mode {
+    box-shadow: 0 0 15px -3px rgba(99, 102, 241, 0.3);
+}
+
+.glow-red {
+    box-shadow: 0 0 20px -3px rgba(239, 68, 68, 0.4);
+    border-color: rgba(239, 68, 68, 0.6) !important;
+}
+
+.glow-amber {
+    box-shadow: 0 0 20px -3px rgba(245, 158, 11, 0.3);
+    border-color: rgba(245, 158, 11, 0.5) !important;
+}
